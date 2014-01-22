@@ -38,6 +38,11 @@ COW.fieldSlot = function(farmRow, farmSlot, numb) {
 	this.areaPieNumber = 0;
 };
 
+//random pieSlot- param 'num' must be a number
+COW.random = function(num) {
+	return Math.floor(Math.random() * num);
+};
+
 //create pies and assign to Model
 COW.pieMaker = function(){
 	var pieNumb1, pieNumb2,	
@@ -46,8 +51,8 @@ COW.pieMaker = function(){
 		p;
 
 	for (p = 0; p < pieAmount; p++) {
-		pieNumb1 = (Math.floor(Math.random() * (rowLength)));
-		pieNumb2 = (Math.floor(Math.random() * (rowLength)));
+		pieNumb1 = COW.random(rowLength);
+		pieNumb2 = COW.random(rowLength);
 		
 		if (COW.farmGrid[pieNumb1][pieNumb2].cowPie == true) {
 			pieAmount++;
