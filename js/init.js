@@ -40,9 +40,8 @@ $(document).ready(function() {
 	//exposed neigbhor array
 	COW.theZeroPieNeigbhors = [];
 		
-
 	//	flatten utility function to flatten arrays
-	// parameter arr needs to be an array, leave returnedArray empty
+	// param 'newArray' needs to be an array, leave 'returnedArray' empty
 	COW.flatten = function reFlatten(newArray, returnedArray) {
 		var i,
 		length = newArray.length;
@@ -71,6 +70,7 @@ $(document).ready(function() {
 	}
 
 	//send in an array of JS objects to check if it touches another farmSlot with zero pies
+	// param 'farmSlotNeighbors' needs to be an array
 	COW.groupZeroPies = function zeroPies (/*array of neighbors*/ farmSlotNeighbors) {
 		var scope = scope || farmSlotNeighbors.length,
 			zeroPieNeighbors = [],
@@ -98,6 +98,7 @@ $(document).ready(function() {
 	};
 	
 	//insert farmSlot JS object and expose the DOM equivalent 
+	//param 'currentSlotNeighbors' needs to be an array
 	COW.exposeSlot = function(currentSlotNeighbors) {
 		var length = currentSlotNeighbors.length,
 			farmRow, farmSlot, $currentFarmSlot, areaPieNumber, index;
