@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>cowPie</title>
+	
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/cow.css">
+</head>
+
+<body id="body">
+
+<div class="row">
+	<div class="twelve columns">
+		<div class="row">
+			<h2 id="gameOver" class="over-message "> </h2>
+			<div class="push-1 large-3 columns info">
+				<img src="imgs/cow2.png" width="200"/> 
+				<h1 style="text-align: center; margin-bottom:0;">PieSweeper</h1>
+
+				<div>Remaining Cowpies: <span id="cowPiesRemaining"> </span></div><br>
+				<div id="timer">
+					<span id="digit3">0</span><span id="digit2">0</span><span id="digit1">0</span>
+				</div><br>
+
+				<select id="setDifficulty">
+					<option value="easy">Easy</option>
+					<option value="medium">Medium</option>
+					<option value="hard">Hard</option>
+				</select>
+				
+				<button class="button tiny" id="startOver">Start Over</button>	
+				<button class="button tiny" id="bestTimes">Best Times</button>
+				
+			</div>
+			<br>
+			<div id="farmField"  class="push-1 large-6 columns"> </div>
+			<div class="large-1 columns"> </div>
+		</div>
+		
+	</div>	
+</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/timer.js"></script>
+	<script src="js/events.js"></script>
+	<script src="js/base.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,68 @@
+#body {
+	background-color:#D4D771;
+}
+
+.over-message {
+	text-align:center;
+	font-size:2em;
+	color:#D4D771;
+	background-color:#4F2F0A;
+}
+
+#farmField {
+
+	margin-bottom: 50px;
+	/*border-bottom:1px solid red;*/
+	float:left;
+}
+
+.farmRow {
+	float: right;
+	clear:right;
+}
+
+.button,
+.button:hover,
+.button:focus {
+	background-color: #A1190D;
+	border: none;
+	border-radius: 7px;
+}
+
+select {
+	border-radius: 7px;
+	border:1px solid #7F883C;
+}
+
+.info {
+	color:#7F883C;
+}
+
+.farmSlot {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	color:black;
+	font-weight:bold;
+	font-size: 12px;
+	text-align:center;
+	border: 1px solid #BEC463;
+	float: left;
+	margin: 0 2px 2px 0;
+	border-radius: 5px;
+}
+
+.youBoutSteppedInItBoy {
+	background: #ccc;
+}
+.expose {
+	background-color:#7F883C;
+}
+
+.flaggedPie {
+	background-color:yellow;
+}
+
+.cowPie {
+	background-color:#4F2F0A;
+}
